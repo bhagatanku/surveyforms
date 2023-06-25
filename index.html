@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Survey Form</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      color: #ff4d00;
+    }
+    
+    .form-container {
+      background-color: #c3d778;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    .form-container input[type="radio"],
+    .form-container input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    .form-container button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .form-container button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Student Survey Form</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+      
+      <label for="grade">Grade/Year:</label>
+      <input type="text" id="grade" required>
+      
+      <label for="school">School/University:</label>
+      <input type="text" id="school" required>
+      
+      <label for="fav-subject">Favorite Subject:</label>
+      <input type="text" id="fav-subject" required>
+      
+      <label for="least-fav-subject">Least Favorite Subject:</label>
+      <input type="text" id="least-fav-subject" required>
+      
+      <label>Study Habits:</label>
+      <input type="checkbox" id="study-alone">
+      <label for="study-alone">I study alone</label>
+      
+      <input type="checkbox" id="study-group">
+      <label for="study-group">I study in a group</label>
+      
+      <input type="checkbox" id="study-quiet">
+      <label for="study-quiet">I prefer studying in a quiet environment</label>
+      
+      <input type="checkbox" id="study-music">
+      <label for="study-music">I prefer studying with background music</label>
+      
+      <input type="checkbox" id="study-other">
+      <label for="study-other">Other:</label>
+      <input type="text" id="study-other-text">
+      
+      <label>Extracurricular Activities:</label>
+      <input type="radio" name="extracurricular" id="extracurricular-yes">
+      <label for="extracurricular-yes">Yes</label>
+      
+      <input type="radio" name="extracurricular" id="extracurricular-no">
+      <label for="extracurricular-no">No</label>
+      
+      <label for="extracurricular-activities">If yes, please specify:</label>
+      <input type="text" id="extracurricular-activities">
+      
+      <label>Learning Style:</label>
+      <input type="checkbox" id="visual">
+      <label for="visual">Visual</label>
+      
+      <input type="checkbox" id="auditory">
+      <label for="auditory">Auditory</label>
+      
+      <input type="checkbox" id="kinesthetic">
+      <label for="kinesthetic">Kinesthetic</label>
+      
+      <input type="checkbox" id="reading-writing">
+      <label for="reading-writing">Reading/Writing</label>
+      
+      <label for="technology-usage">How often do you use technology for studying?</label>
+      <input type="radio" name="technology-usage" id="daily">
+      <label for="daily">Daily</label>
+      
+      <input type="radio" name="technology-usage" id="weekly">
+      <label for="weekly">Weekly</label>
+      
+      <input type="radio" name="technology-usage" id="monthly">
+      <label for="monthly">Monthly</label>
+      
+      <input type="radio" name="technology-usage" id="rarely">
+      <label for="rarely">Rarely</label>
+      
+      <label>Which digital tools do you use for studying?</label>
+      <input type="checkbox" id="online-textbooks">
+      <label for="online-textbooks">Online textbooks</label>
+      
+      <input type="checkbox" id="educational-apps">
+      <label for="educational-apps">Educational apps</label>
+      
+      <input type="checkbox" id="e-books">
+      <label for="e-books">E-books</label>
+      
+      <input type="checkbox" id="online-videos">
+      <label for="online-videos">Online videos/tutorials</label>
+      
+      <input type="checkbox" id="technology-other">
+      <label for="technology-other">Other:</label>
+      <input type="text" id="technology-other-text">
+      
+      <label for="study-environment">Where do you prefer to study?</label>
+      <input type="checkbox" id="library">
+      <label for="library">Library</label>
+      
+      <input type="checkbox" id="home">
+      <label for="home">Home</label>
+      
+      <input type="checkbox" id="coffee-shop">
+      <label for="coffee-shop">Coffee shop</label>
+      
+      <input type="checkbox" id="park">
+      <label for="park">Park</label>
+      
+      <input type="checkbox" id="study-environment-other">
+      <label for="study-environment-other">Other:</label>
+      <input type="text" id="study-environment-other-text">
+      
+      <label for="feedback">Is there anything specific you would like to share about your learning experience?</label>
+      <textarea id="feedback" rows="4"></textarea>
+      
+      <label for="color-preferences">Select your favorite colors (pick at least three):</label>
+      <input type="checkbox" id="color-red">
+      <label for="color-red">Red</label>
+      
+      <input type="checkbox" id="color-blue">
+      <label for="color-blue">Blue</label>
+      
+      <input type="checkbox" id="color-yellow">
+      <label for="color-yellow">Yellow</label>
+      
+      <input type="checkbox" id="color-green">
+      <label for="color-green">Green</label>
+      
+      <input type="checkbox" id="color-orange">
+      <label for="color-orange">Orange</label>
+      
+      <input type="checkbox" id="color-purple">
+      <label for="color-purple">Purple</label>
+      
+      <input type="checkbox" id="color-pink">
+      <label for="color-pink">Pink</label>
+      
+      <input type="checkbox" id="color-other">
+      <label for="color-other">Other:</label>
+      <input type="text" id="color-other-text">
+      
+      <label for="additional-comments">Additional Comments:</label>
+      <textarea id="additional-comments" rows="4"></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
